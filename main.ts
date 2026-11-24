@@ -8,7 +8,7 @@ process.umask(0o022);
 import { mkdirSync, writeFileSync } from "node:fs";
 
 const TIP =
-  "Tip: the progress bar is lying to both of us, so use this time to drink some water and pretend you weren't about to rerun the exact same command that just failed.";
+  "Tip: use this loading time to drink some water and forgive yourself for rerunning the same failing command twice, your agent did it three times and is pretending it didn't.";
 
 const chars = [...TIP].length;
 if (chars < 1 || chars > 200 || TIP.trim().length === 0) {
